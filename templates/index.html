@@ -1,7 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
+{% if section %}
 <h1 class="title">
-    This site will contain examples of cause-effect structures.
+    {{ section.title }}
 </h1>
+<a>{{ section.description }}</a>
+{% for page in section.pages %}
+<h2>{{ page.title }}</h2>
+<div>{{ page.content | safe }}</div>
+{% endfor %}
+{% endif %}
 {% endblock content %}

@@ -2,8 +2,9 @@ title = "Cause-effect structures"
 base_url = "https://singletonmedia.com"
 compile_sass = true
 highlight_code = false
-build_search_index = false
+build_search_index = true
 theme = "juice"
 
 [extra]
+
 author = "k7f"
