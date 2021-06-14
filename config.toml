@@ -1,4 +1,4 @@
-title = "Cause-effect structures"
+title = "Algebra of nets"
 base_url = "https://singletonmedia.com"
 compile_sass = true
 highlight_code = false
@@ -8,3 +8,9 @@ theme = "juice"
 [extra]
 
 author = "k7f"
+juice_logo_name = "c-e structures"
+juice_logo_path = "logo.svg"
+juice_extra_menu = [
+    { title = "Repository", link = "https://github.com/k7f/ascesis" }
+]
+repository_url = "https://github.com/k7f/ascesis"

@@ -1,5 +1,5 @@
 +++
-title = "Work in progress"
+title = "Examples"
 description = "This site will contain examples of cause-effect structures."
 sort_by = "weight"
 template = "index.html"
