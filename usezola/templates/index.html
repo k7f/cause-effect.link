@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/normalize.css">
-    <link rel="stylesheet" href="juice.css">
+    <link rel="stylesheet" href="/juice.css">
     {% block head %}
     {% endblock head %}
 </head>
@@ -26,10 +26,13 @@
         {% block hero %}
         <section class="text-center">
             <h1 class="heading-text" style="font-size: 50px">
-                Algebra of nets
+                {% block heading %}{{ config.title }}{% endblock heading %}
             </h1>
             <h3 class="title-text">
-                <b>Cause-effect structures</b> are like Petri nets but composable and graphically lightweight.
+                Combine intuitive attractiveness of graphic
+                representation of tasks with a structuring mechanism
+                and transformation rules offered by algebraic
+                calculus.
             </h3>
         </section>
         <img class="hero-image" style="width: 50%" src="example.jpg">

@@ -9,8 +9,8 @@
     {% include "_variables.html" %}
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../normalize.css">
-    <link rel="stylesheet" href="../juice.css">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/juice.css">
     {% block head %}
     {% endblock head %}
 </head>
@@ -26,18 +26,9 @@
         {% block hero %}
         <section class="text-center">
             <h1 class="heading-text" style="font-size: 50px">
-                Algebra of nets
+                {% block heading %}{{ section.title }} | {{ config.title }} {% endblock heading %}
             </h1>
-            <h3 class="title-text">
-                <b>Cause-effect structures</b> are like Petri nets but composable and graphically lightweight.
-            </h3>
         </section>
-        <img class="hero-image" style="width: 50%" src="example.jpg">
-
-        <div class="explore-more text"
-            onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
-            Explore More ⇩
-        </div>
         <style>
             .hero section {
                 padding: 0 5rem;
@@ -59,25 +50,13 @@
 
     <main>
         {% block toc %}
-        {% if section.toc %}
-        {% set toc = section.toc %}
-        {% elif page.toc %}
-        {% set toc = page.toc %}
-        {% endif %}
-        {% if toc %}
+        {% if section.pages %}
         <div class="toc">
             <div class="toc-sticky">
-                {% for h in toc %}
+                {% for pg in section.pages %}
                 <div class="toc-item">
-                    <a class="subtext" href="{{h.permalink | safe}}">{{ h.title }}</a>
+                    <a class="subtext" href="{{pg.permalink | safe}}">{{ pg.title }}</a>
                 </div>
-                {% if h.children %}
-                {% for h2 in h.children %}
-                <div class="toc-item-child">
-                    <a class="subtext" href="{{h2.permalink | safe}}"><small>- {{ h2.title }}</small></a>
-                </div>
-                {% endfor %}
-                {% endif %}
                 {% endfor %}
             </div>
         </div>
