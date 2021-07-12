@@ -8,9 +8,9 @@ theme = "juice-modified"
 [extra]
 
 author = "k7f"
-juice_logo_name = "c-e structures"
-juice_logo_path = "logo.svg"
-juice_extra_menu = [
+logo_name = "stru<sup>C</sup>tur<sub>E</sub>s"
+logo_path = "logo.jpg"
+extra_menu = [
     { title = "Repository", link = "https://github.com/k7f/ascesis" }
 ]
 repository_url = "https://github.com/k7f/ascesis"
