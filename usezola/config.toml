@@ -9,7 +9,7 @@ theme = "juice-modified"
 
 author = "k7f"
 logo_name = "stru<sup>C</sup>tur<sub>E</sub>s"
-logo_path = "logo.jpg"
+logo_path = "logo.png"
 extra_menu = [
     { title = "Repository", link = "https://github.com/k7f/ascesis" }
 ]

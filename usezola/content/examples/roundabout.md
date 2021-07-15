@@ -8,3 +8,5 @@ author = "k7f"
 +++
 
 Roundabout example.
+
+![test](/test.svg)

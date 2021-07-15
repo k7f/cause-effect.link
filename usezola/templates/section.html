@@ -27,10 +27,13 @@
         {% block hero %}
         <section class="text-center">
             <h1 class="heading-text" style="font-size: 50px">
-                {% block heading %}{{ config.title }}<br>{{ section.title }}{% endblock heading %}
+                {% block heading %}{{ config.title }}{% endblock heading %}
+            </h1>
+            <h1 class="subheading-text" style="font-size: 30px">
+                {% block subheading %}{{ section.title }}{% endblock subheading %}
             </h1>
 
-        {% block toc %}
+            {% block toc %}
         {% if section.pages %}
         <div class="toc">
             <div class="toc-sticky">
