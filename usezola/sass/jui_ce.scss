@@ -1,3 +1,5 @@
+@import "../themes/jui_ce/sass/_jui_ce.scss";
+
 .logo {
   font-family: "Dancing Script", cursive;
   font-weight: 700;
@@ -29,4 +31,20 @@
   font-weight: 600;
   padding: 0 0 25px 0;
   color: var(--primary-text-color);
+}
+
+.text {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  color: var(--primary-text-color);
+}
+
+.subtext {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
 }

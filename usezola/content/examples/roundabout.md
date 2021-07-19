@@ -7,6 +7,6 @@ weight = 1
 author = "k7f"
 +++
 
-Roundabout example.
+![roundabout](/examples/roundabout.svg)
 
-![test](/test.svg)
+Roundabout example.

@@ -3,7 +3,7 @@ base_url = "https://cause-effect.link"
 compile_sass = true
 highlight_code = false
 build_search_index = true
-theme = "juice-modified"
+theme = "jui_ce"
 
 [extra]
 
